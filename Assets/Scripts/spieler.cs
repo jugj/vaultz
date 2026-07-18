@@ -5,7 +5,6 @@ public class spieler : MonoBehaviour
     public float geschwindigkeit = 5f;
     public float sprintGeschwindigkeit = 8f;
 
-    public int maxHP = 100;
     private int hp;
 
     private Rigidbody2D rb;
@@ -14,7 +13,7 @@ public class spieler : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        hp = maxHP;
+        
     }
 
     void Update()
@@ -44,7 +43,7 @@ public class spieler : MonoBehaviour
             speed = sprintGeschwindigkeit;
         }
 
-        Debug.Log("asdasd" + speed + " " + bewegung);
+        
 
         rb.velocity = bewegung * speed;
     }
