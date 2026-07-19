@@ -8,7 +8,7 @@ public class EnemyDamage : MonoBehaviour
     {
         Debug.Log("Etwas hat mich berührt!");
 
-        if(collision.gameObject.CompareTag("Player"))
+        if(collision.gameObject.CompareTag("Player") || collision.gameObject.CompareTag("Tresor") )
         {
             Debug.Log("Spieler getroffen!");
 
@@ -18,6 +18,20 @@ public class EnemyDamage : MonoBehaviour
             {
                 hp.Schaden(schaden);
             }
+        }
+
+        if(collision.gameObject.CompareTag("Tresor") )
+        {
+            Debug.Log("Tresor getroffen!");
+
+            leben hp = collision.gameObject.GetComponent<leben>();
+
+            if(hp != null)
+            {
+                hp.Schaden(schaden);
+            }
+
+            Destroy(gameObject);
         }
     }
 }

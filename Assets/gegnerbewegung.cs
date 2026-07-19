@@ -3,18 +3,28 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class gegnerbewegung : MonoBehaviour
-{ [SerializeField]public Transform target;
+{ 
+    [SerializeField]
+    public Transform target;
+
+    Rigidbody2D rb;
 public float Geschwindigkeit = 3f;
     // Start is called before the first frame update
     void Start()
     {
+        rb = GetComponent<Rigidbody2D>();
         target=GameObject.FindWithTag("Tresor").GetComponent<Transform>();
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        float step = 1f* Geschwindigkeit * Time.deltaTime;
-        transform.position = Vector3.MoveTowards(transform.position, target.position, step);
+
+        Vector2 newPosition = Vector2.MoveTowards(
+            rb.position,
+            target.position,
+            Geschwindigkeit * Time.fixedDeltaTime);
+
+        rb.MovePosition(newPosition);
     }
 }
