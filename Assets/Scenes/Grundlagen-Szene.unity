@@ -1020,7 +1020,7 @@ GameObject:
   - component: {fileID: 904866202}
   m_Layer: 0
   m_Name: gegner
-  m_TagString: Untagged
+  m_TagString: gegner
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1659,67 +1659,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1769948914
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1769948915}
-  - component: {fileID: 1769948917}
-  - component: {fileID: 1769948916}
-  m_Layer: 0
-  m_Name: Schusspunkt
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1769948915
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1769948914}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.8, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1957510550}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1769948916
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1769948914}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: deaa40d111ec9f845bc689b90f90867b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  geschwindigkeit: 25
-  schaden: 20
---- !u!114 &1769948917
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1769948914}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: deaa40d111ec9f845bc689b90f90867b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  geschwindigkeit: 25
-  schaden: 20
 --- !u!1 &1773831548
 GameObject:
   m_ObjectHideFlags: 0
@@ -1804,6 +1743,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1831236876
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1831236877}
+  m_Layer: 0
+  m_Name: Schusspunkt
+  m_TagString: Untagged
+  m_Icon: {fileID: 7148428337604731935, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1831236877
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1831236876}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.9, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1957510550}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1878419062
 GameObject:
   m_ObjectHideFlags: 0
@@ -1815,7 +1785,6 @@ GameObject:
   - component: {fileID: 1878419065}
   - component: {fileID: 1878419064}
   - component: {fileID: 1878419063}
-  - component: {fileID: 1878419066}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -1873,20 +1842,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1878419066
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1878419062}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: deaa40d111ec9f845bc689b90f90867b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  geschwindigkeit: 25
-  schaden: 20
 --- !u!1 &1957510548
 GameObject:
   m_ObjectHideFlags: 0
@@ -1903,8 +1858,6 @@ GameObject:
   - component: {fileID: 1957510555}
   - component: {fileID: 1957510556}
   - component: {fileID: 1957510557}
-  - component: {fileID: 1957510559}
-  - component: {fileID: 1957510558}
   m_Layer: 0
   m_Name: Spieler
   m_TagString: Untagged
@@ -1977,8 +1930,8 @@ Transform:
   m_LocalScale: {x: 4.947817, y: 25.867805, z: 1.5043122}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1769948915}
   - {fileID: 54946974}
+  - {fileID: 1831236877}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: -3.085, y: 0, z: 0}
 --- !u!61 &1957510551
@@ -2109,35 +2062,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   kugel: {fileID: 5341090004793551086, guid: 5c07e684de119844dbe5077b6fc4a7d2, type: 3}
-  schussPunkt: {fileID: 1769948915}
---- !u!114 &1957510558
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1957510548}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: deaa40d111ec9f845bc689b90f90867b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  geschwindigkeit: 25
-  schaden: 20
---- !u!114 &1957510559
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1957510548}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: deaa40d111ec9f845bc689b90f90867b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  geschwindigkeit: 25
-  schaden: 20
+  schussPunkt: {fileID: 1831236877}
 --- !u!1 &2112067692
 GameObject:
   m_ObjectHideFlags: 0
@@ -2320,8 +2245,8 @@ SceneRoots:
   - {fileID: 2121611182}
   - {fileID: 2112067694}
   - {fileID: 1514961677}
-  - {fileID: 620310993}
   - {fileID: 1730395549}
+  - {fileID: 620310993}
   - {fileID: 904866198}
   - {fileID: 422512806}
   - {fileID: 1878419065}
