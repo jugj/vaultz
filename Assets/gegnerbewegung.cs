@@ -15,6 +15,6 @@ public float Geschwindigkeit = 3f;
     void Update()
     {
         float step = 1f* Geschwindigkeit * Time.deltaTime;
-        transform.position = Vector2.MoveTowards(transform.position, target.position, step);
+        transform.position = Vector3.MoveTowards(transform.position, target.position, step);
     }
 }
