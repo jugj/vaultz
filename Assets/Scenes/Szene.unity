@@ -2022,8 +2022,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 876071354}
-  - component: {fileID: 876071356}
-  - component: {fileID: 876071355}
   m_Layer: 6
   m_Name: Schusspunkt
   m_TagString: Untagged
@@ -2046,34 +2044,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 808250661}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &876071355
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 876071353}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: deaa40d111ec9f845bc689b90f90867b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  schaden: 20
-  speed: 5
---- !u!114 &876071356
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 876071353}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: deaa40d111ec9f845bc689b90f90867b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  schaden: 20
-  speed: 5
 --- !u!1 &947686623
 GameObject:
   m_ObjectHideFlags: 0
